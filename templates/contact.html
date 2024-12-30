@@ -1,0 +1,66 @@
+{% extends "base.html" %} {% load static %} {% block title %} Eisaal Foundation
+{% endblock %} {% block content %}
+
+<!-- Contact -->
+<div id="contact" class="form-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="text-container">
+          <div class="section-title">CONTACT</div>
+          <h2>Get In Touch Using The Form</h2>
+          <p>
+            You can stop by our office for a cup of coffee and just use the
+            contact form below for any questions and inquiries
+          </p>
+          <ul class="list-unstyled li-space-lg">
+            <li class="address">
+              <i class="fas fa-map-marker-alt"></i>Address: 253 mohalla chewra opp jatav Dharamshala 
+              Amroha
+            </li>
+            <li>
+              <i class="fas fa-phone"></i
+              ><a href="tel:+91-9927326327">+91-9927326327</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i
+              ><a href="mailto:shortfiqh@gmail.com">shortfiqh@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end of text-container -->
+      </div>
+      <!-- end of col -->
+      <div class="col-lg-6">
+        <!-- Contact Form -->
+        <form id="contactForm" method="post" action="contact">
+          {% csrf_token %}
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      
+      
+          
+        <!-- end of contact form -->
+      </div>
+      <!-- end of col -->
+    </div>
+    <!-- end of row -->
+  </div>
+  <!-- end of container -->
+</div>
+<!-- end of form-2 -->
+<!-- end of contact -->
+
+{% endblock %}
