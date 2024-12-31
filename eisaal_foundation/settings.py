@@ -13,7 +13,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 import os
 from django.contrib.messages import constants as messages
-
+import  dj_database_url
+import psycopg
+import psycopg_binary
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -79,10 +81,7 @@ WSGI_APPLICATION = 'eisaal_foundation.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse("postgresql://eisaal_foundation_database_user:U9pViraHUug3akd0jDN5py3YX7IAeycp@dpg-ctpagma3esus73dfhbt0-a.oregon-postgres.render.com/eisaal_foundation_database")
 }
 
 
