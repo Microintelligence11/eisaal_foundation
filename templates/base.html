@@ -70,49 +70,54 @@
       </div>
     </div>
     <!-- end of preloader -->
-    {% if messages %}
-    {% for message in messages %}
-    <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+    {% if messages %} {% for message in messages %}
+    <div
+      class="alert alert-{{ message.tags }} alert-dismissible fade show my-0"
+      role="alert"
+    >
       <strong>{{ message }}</strong>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    {% endfor %}
-    {% endif %}
+    {% endfor %} {% endif %}
     <!-- Header -->
-<header id="header" class="header">
-  <div class="header-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="text-container">
-            <h1>
-              Eisaal Foundation <br />
-              <span id="js-rotating" class="spinner-text"
-                >Community, Compassion, Empowerment</span
-              >
-            </h1>
-            <p class="p-heading p-large">
-              At Eisaal Foundation, our vision is simple yet powerful: to create
-              a society where every individual, regardless of their background
-              or circumstances, has access to the resources and support they
-              need to lead a fulfilling and dignified life.
-            </p>
-            <a class="btn-solid-lg page-scroll" href="about">DISCOVER</a>
+    <header id="header" class="header">
+      <div class="header-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-container">
+                <h1>
+                  Eisaal Foundation <br />
+                  <span id="js-rotating" class="spinner-text"
+                    >Community, Compassion, Empowerment</span
+                  >
+                </h1>
+                <p class="p-heading p-large">
+                  At Eisaal Foundation, our vision is simple yet powerful: to
+                  create a society where every individual, regardless of their
+                  background or circumstances, has access to the resources and
+                  support they need to lead a fulfilling and dignified life.
+                </p>
+                <a class="btn-solid-lg page-scroll" href="about">DISCOVER</a>
+              </div>
+            </div>
+            <!-- end of col -->
           </div>
+          <!-- end of row -->
         </div>
-        <!-- end of col -->
+        <!-- end of container -->
       </div>
-      <!-- end of row -->
-    </div>
-    <!-- end of container -->
-  </div>
-  <!-- end of header-content -->
-</header>
-<!-- end of header -->
-<!-- end of header -->
-    
+      <!-- end of header-content -->
+    </header>
+    <!-- end of header -->
+    <!-- end of header -->
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
@@ -165,13 +170,23 @@
               >DONATION</a
             >
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://pages.razorpay.com/pl_PDOeOCnaZ0JAFD/view?fbclid=PAY2xjawHfVHxleHRuA2FlbQIxMAABpk56LGqASC1uSeERIVTeLEElcaxi2V2ZL3QiGINzWtAm7Jd-OOBtpIjr_g_aem_Ja5LYPM7hyUTxu6ODY_UTQ"
-                ><span class="item-text">NATION</span></a
+              <a
+                class="dropdown-item"
+                href="https://pages.razorpay.com/pl_PDOeOCnaZ0JAFD/view?fbclid=PAY2xjawHfVHxleHRuA2FlbQIxMAABpk56LGqASC1uSeERIVTeLEElcaxi2V2ZL3QiGINzWtAm7Jd-OOBtpIjr_g_aem_Ja5LYPM7hyUTxu6ODY_UTQ"
+                ><span class="item-text">NATIONAL</span></a
               >
               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href="https://www.paypal.com/paypalme/eisaalfoundation?https://www.paypal.com/paypalme/eisaalfoundation?"
+              <a
+                class="dropdown-item"
+                href="https://www.paypal.com/paypalme/eisaalfoundation?https://www.paypal.com/paypalme/eisaalfoundation?"
                 ><span class="item-text">INTERNATIONAL</span></a
               >
+              <div class="dropdown-items-divide-hr"></div>
+              <a
+              class="dropdown-item"
+              href=" https://rzp.io/rzp/OFz5TDJz"
+              ><span class="item-text">Donation for our upcoming Projects</span></a
+            >
             </div>
           </li>
           <!-- end of dropdown menu -->
@@ -204,7 +219,6 @@
     <!-- end of navbar -->
     <!-- end of navbar -->
 
-   
     <!-- Footer -->
     <div class="footer">
       <div class="container">
@@ -213,7 +227,11 @@
             <div class="text-container about">
               <h4>Eisaal Foundation</h4>
               <p class="white">
-                The journey we’ve undertaken so far has been filled with compassion, hard work, and the determination to bring about change. But our work is far from over. With your continued support, we can reach even more individuals and families, spreading love, kindness, and empowerment.
+                The journey we’ve undertaken so far has been filled with
+                compassion, hard work, and the determination to bring about
+                change. But our work is far from over. With your continued
+                support, we can reach even more individuals and families,
+                spreading love, kindness, and empowerment.
               </p>
             </div>
             <!-- end of text-container -->
@@ -227,9 +245,7 @@
                   <a class="white" href="/">Home</a>
                 </li>
                 <li>
-                  <a class="white" href="about"
-                    >Abou Us</a
-                  >
+                  <a class="white" href="about">Abou Us</a>
                 </li>
                 <li>
                   <a class="white" href="achievement">Achievements</a>
@@ -247,14 +263,19 @@
               <h4>Contact Us</h4>
               <ul class="list-unstyled li-space-lg">
                 <li>
-                  <a class="white" href="tel:+91-9927326327" type="tel">+91-9927326327</a>
+                  <a class="white" href="tel:+91-9927326327" type="tel"
+                    >+91-9927326327</a
+                  >
                 </li>
                 <li>
-                  <a class="white" href="mailto:shortfiqh@gmail.com">shortfiqh@gmail.com</a>
+                  <a class="white" href="mailto:shortfiqh@gmail.com"
+                    >shortfiqh@gmail.com</a
+                  >
                 </li>
                 <li class="media">
-                  <p class="white">Address: 253 mohalla chewra opp jatav Dharamshala 
-                    Amroha</p>
+                  <p class="white">
+                    Address: 253 mohalla chewra opp jatav Dharamshala Amroha
+                  </p>
                 </li>
               </ul>
             </div>
@@ -266,13 +287,28 @@
               <h4>Social Media</h4>
               <ul class="list-unstyled li-space-lg">
                 <li>
-                  <a class="white" href="https://www.facebook.com/share/15pi8cgZDa/?mibextid=wwXIfr" target="_blank">Meta</a>
+                  <a
+                    class="white"
+                    href="https://www.facebook.com/share/15pi8cgZDa/?mibextid=wwXIfr"
+                    target="_blank"
+                    >Meta</a
+                  >
                 </li>
                 <li>
-                  <a class="white" href="https://www.instagram.com/shiafiqh/profilecard/?igsh=MTBvdnpkYTNuMXNi" target="_blank">Instagram</a>
+                  <a
+                    class="white"
+                    href="https://www.instagram.com/shiafiqh/profilecard/?igsh=MTBvdnpkYTNuMXNi"
+                    target="_blank"
+                    >Instagram</a
+                  >
                 </li>
                 <li>
-                  <a class="white" href="https://www.youtube.com/channel/UCmo83jn_Xhj1Se5_CdrmrqQ" target="_blank">YouTube</a>
+                  <a
+                    class="white"
+                    href="https://www.youtube.com/channel/UCmo83jn_Xhj1Se5_CdrmrqQ"
+                    target="_blank"
+                    >YouTube</a
+                  >
                 </li>
               </ul>
             </div>
@@ -294,9 +330,7 @@
           <div class="col-lg-12">
             <p class="p-small">
               Copyright © 2025
-              <a href="/"
-                >Esiaal Foundation</a
-              >
+              <a href="/">Esiaal Foundation</a>
             </p>
           </div>
           <!-- end of col -->
