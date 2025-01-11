@@ -40,3 +40,7 @@ def contact(request):
             messages.success(request,"your form has been submitted sucessfuly")
 
     return render(request, "contact.html")
+
+
+def donationUpcomingProjetc(request):
+    return render(request, "donationUpcomingProjetc.html")

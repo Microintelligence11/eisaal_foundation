@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'eisaal_foundation.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse("postgresql://eisaal_foundation_database_user:U9pViraHUug3akd0jDN5py3YX7IAeycp@dpg-ctpagma3esus73dfhbt0-a.oregon-postgres.render.com/eisaal_foundation_database")
+    'default': dj_database_url.parse("postgresql://neondb_owner:ahwtk4Av8CZs@ep-raspy-star-a50srip3.us-east-2.aws.neon.tech/neondb?sslmode=require")
 }
 
 
