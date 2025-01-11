@@ -24,6 +24,6 @@ urlpatterns = [
     path('nation_donation', views.national_donation, name='national_donation'),
     path('international_donation', views.international_donation, name='international_donation'),
     path('contact', views.contact, name='contact'),
-    path('donationUpcomingProjetc', views.donationUpcomingProjetc, name='donationUpcomingProjetc'),
+    path('donationUpcomingProject', views.donationUpcomingProject, name='donationUpcomingProject'),
     # path('shop/', include('eisaal_shop.urls')),
 ]

@@ -42,5 +42,5 @@ def contact(request):
     return render(request, "contact.html")
 
 
-def donationUpcomingProjetc(request):
-    return render(request, "donationUpcomingProjetc.html")
+def donationUpcomingProject(request):
+    return render(request, "donationUpcomingProject.html")
